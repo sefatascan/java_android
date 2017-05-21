@@ -1,5 +1,3 @@
-# Healthy_Life
-
 ### Working by
 - Sefa Taşcan
 - Rabia Yel
