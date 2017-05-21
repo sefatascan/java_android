@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_acil_mudahale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sefa.aninterface.AcilMudahale">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            app:title="Acil Mudahale"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonGray"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:text="Yetkili Bilgileri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:text="T.C:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_tc_H"
+                    android:layout_weight="1"
+                    android:text="tc"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_ad_H"
+                    android:layout_weight="1"
+                    android:text="ad"
+                    android:paddingRight="5dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="soyad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_soyad_H"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+
+            <TextView
+                android:text="dogumtarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_dogumtarih_H"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="sehir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_sehir_H"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="kangrubu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_kangrub_H"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/expandable_listview"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="2dp" />
+
+    </LinearLayout>
+</RelativeLayout>
