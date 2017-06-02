@@ -119,7 +119,7 @@ public class NewPassword extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... voids) {
             String NAMESPACE ="http://tempuri.org/" ;
-            String URL ="http://192.168.1.54/Servis.asmx";
+            String URL ="http://192.168.1.35/Servis.asmx";
             String METHOD_NAME ="setPassword";
             String SOAP_ACTION = "http://tempuri.org/setPassword";
 

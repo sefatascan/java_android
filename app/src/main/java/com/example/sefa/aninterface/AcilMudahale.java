@@ -67,7 +67,7 @@ public class AcilMudahale extends AppCompatActivity {
         String RESPONSE1,RESPONSE2,RESPONSE3,RESPONSE4,RESPONSE5;
 
         String NAMESPACE ="http://tempuri.org/" ;
-        String URL ="http://192.168.1.54/Servis.asmx";
+        String URL ="http://192.168.1.35/Servis.asmx";
 
         @Override
         protected void onPreExecute() {
@@ -139,8 +139,8 @@ public class AcilMudahale extends AppCompatActivity {
         }
         private void doIletisimBilgileri(){
 
-            String METHOD_NAME ="getKisininİletisimBilgileri";
-            String SOAP_ACTION = "http://tempuri.org/getKisininİletisimBilgileri";
+            String METHOD_NAME ="getKisininIletisimBilgileri";
+            String SOAP_ACTION = "http://tempuri.org/getKisininIletisimBilgileri";
 
             SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
             request.addProperty("inputId",kisiID);
