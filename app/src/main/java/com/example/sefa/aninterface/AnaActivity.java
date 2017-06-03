@@ -1,6 +1,6 @@
 package com.example.sefa.aninterface;
 
-import android.app.Dialog;
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,12 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
-
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
 import org.ksoap2.serialization.SoapObject;
-
 
 
 public class AnaActivity extends AppCompatActivity {
@@ -30,6 +27,7 @@ public class AnaActivity extends AppCompatActivity {
     private TextView textView_dogum;
     private TextView textView_sehir;
     private TextView textView_kan;
+
     private FloatingActionButton buton_qrcode;
     private KeepLoginPerson loginPerson;
     private LinearLayout linear_yapilan;
@@ -54,6 +52,8 @@ public class AnaActivity extends AppCompatActivity {
 
 
         loginPerson =(KeepLoginPerson)getIntent().getSerializableExtra("ApploginKisi");
+
+
         textView_ad.setText(loginPerson.getAd());
         textView_soyad.setText(loginPerson.getSoyad());
         textView_tc.setText(loginPerson.getTcno());
@@ -86,9 +86,11 @@ public class AnaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Dialog dialog = new Dialog(AnaActivity.this);
-                dialog.setContentView(R.layout.custom_dialog_profil);
-                dialog.show();
+
+                Intent intent = new Intent(getApplicationContext(),MudahaleEdilen.class);
+                intent.putExtra("ApploginKisi", loginPerson);
+                startActivity(intent);
+
             }
         });
         linear_cikis.setOnClickListener(new View.OnClickListener() {
@@ -123,8 +125,6 @@ public class AnaActivity extends AppCompatActivity {
         }
 
     }
-
-
 
     private class ConnectService extends AsyncTask<Void,Void,Void>{
         ProgressDialog progressDialog = new ProgressDialog(AnaActivity.this);
@@ -185,6 +185,7 @@ public class AnaActivity extends AppCompatActivity {
 
 
     }
+
     private void setAlertDialog(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(AnaActivity.this);
         alertDialogBuilder

@@ -37,7 +37,7 @@
             android:layout_marginBottom="2dp">
 
             <TextView
-                android:text="Yetkili Bilgileri"
+                android:text="Hasta Bilgileri"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView1"

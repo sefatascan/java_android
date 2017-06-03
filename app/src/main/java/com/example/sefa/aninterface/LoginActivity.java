@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        if( checkInternetConnection() == false){
+        if(!checkInternetConnection()){
            setAlertDialogConnectNetwork();
         }
 
@@ -206,8 +206,6 @@ public class LoginActivity extends AppCompatActivity {
             }
 
 
-
-
             return null;
         }
 
@@ -226,8 +224,6 @@ public class LoginActivity extends AppCompatActivity {
             else{
                 setAlertDialogSifreYanlis();
             }
-
-
 
 
         }
