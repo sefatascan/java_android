@@ -2,4 +2,3 @@
 - Sefa Taşcan
 - Rabia Yel
 - Sevcel Gözde Tanay
-- Hakan Bayram
