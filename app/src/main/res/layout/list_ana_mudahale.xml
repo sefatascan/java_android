@@ -28,13 +28,6 @@
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewD"
-        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/textViewE"
         android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
 

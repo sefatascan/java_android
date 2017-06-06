@@ -50,16 +50,14 @@ public class DuzListeAdapter extends BaseAdapter {
         TextView textViewA= (TextView)view.findViewById(R.id.textViewA);
         TextView textViewB= (TextView)view.findViewById(R.id.textViewB);
         TextView textViewC= (TextView)view.findViewById(R.id.textViewC);
-        TextView textViewD= (TextView)view.findViewById(R.id.textViewD);
         TextView textViewE= (TextView)view.findViewById(R.id.textViewE);
         TextView textViewF= (TextView)view.findViewById(R.id.textViewF);
 
         textViewA.setText((String)childArray.get(0));
         textViewB.setText((String)childArray.get(1));
         textViewC.setText((String)childArray.get(2));
-        textViewD.setText((String)childArray.get(3));
-        textViewE.setText((String)childArray.get(4));
-        textViewF.setText((String)childArray.get(5));
+        textViewE.setText((String)childArray.get(3));
+        textViewF.setText((String)childArray.get(4));
 
 
 

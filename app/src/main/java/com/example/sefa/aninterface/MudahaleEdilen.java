@@ -50,7 +50,7 @@ public class MudahaleEdilen extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... voids) {
             String NAMESPACE ="http://tempuri.org/" ;
-            String URL ="http://192.168.1.35/Servis.asmx";
+            String URL ="http://192.168.43.24/Servis.asmx";
             String METHOD_NAME ="getMudahaleEdilenler";
             String SOAP_ACTION = "http://tempuri.org/getMudahaleEdilenler";
 
@@ -77,7 +77,6 @@ public class MudahaleEdilen extends AppCompatActivity {
                         a.add(c.getString("Tcno"));
                         a.add(c.getString("Ad"));
                         a.add(c.getString("Soyad"));
-                        a.add(c.getString("Yetki"));
                         a.add(c.getString("Tarih"));
                         a.add(c.getString("Aciklama"));
 

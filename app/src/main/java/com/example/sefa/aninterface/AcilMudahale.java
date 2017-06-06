@@ -67,7 +67,7 @@ public class AcilMudahale extends AppCompatActivity {
         String RESPONSE1,RESPONSE2,RESPONSE3,RESPONSE4,RESPONSE5;
 
         String NAMESPACE ="http://tempuri.org/" ;
-        String URL ="http://192.168.1.35/Servis.asmx";
+        String URL ="http://192.168.43.24/Servis.asmx";
 
         @Override
         protected void onPreExecute() {

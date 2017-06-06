@@ -185,7 +185,7 @@ public class LoginActivity extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
 
             String NAMESPACE ="http://tempuri.org/" ;
-            String URL ="http://192.168.1.35/Servis.asmx";
+            String URL ="http://192.168.43.24/Servis.asmx";
             String METHOD_NAME ="getapplogin";
             String SOAP_ACTION = "http://tempuri.org/getapplogin";
 
