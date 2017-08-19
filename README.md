@@ -1,4 +1,1 @@
-### Working by
-- Sefa Taşcan
-- Rabia Yel
-- Sevcel Gözde Tanay
+### Tubitak 2209/B Destek Programı dahilinde
